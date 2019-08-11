@@ -1,0 +1,98 @@
+.services_block {
+    padding: 140px 0 110px 0;
+}
+
+.services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .services_title {
+        margin: 0;
+        position: relative;
+        color: $services-title-color;
+        font-size: 46px;
+        font-weight: 700;
+        line-height: 49px;
+        text-transform: uppercase;
+        letter-spacing: 5.52px;
+
+        &::before {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            top: -18px;
+            left: 89px;
+            position: absolute;
+            background-color: $title-hyphen-color;
+        }
+    }
+}
+
+.services_cards {
+    display: flex;
+    padding: 60px 0 0 0;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+    .service_card {
+        display: flex;
+        width: 295px;
+        flex-direction: column;
+        align-items: center;
+
+        &::before {
+            content: '';
+            display: block;
+            width: 90px;
+            height: 81px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+        }
+
+        &:nth-child(1)::before {
+            background-image: url('../img/services/service_1.png');
+        }
+
+        &:nth-child(2)::before {
+            background-image: url('../img/services/service_2.png');
+        }
+
+        &:nth-child(3)::before {
+            background-image: url('../img/services/service_3.png');
+        }
+
+        &:nth-child(4)::before {
+            background-image: url('../img/services/service_4.png');
+        }
+
+        &:nth-child(5)::before {
+            background-image: url('../img/services/service_5.png');
+        }
+
+        &:nth-child(6)::before {
+            background-image: url('../img/services/service_6.png');
+        }
+
+        &:nth-child(1) {
+            margin: 0 0 80px 0;
+        }
+
+        &:nth-child(2) {
+            margin: 0 0 80px 0;
+        }
+
+        &:nth-child(3) {
+            margin: 0 0 80px 0;
+        }
+
+        .service_card_description {
+            margin: 12px 0 0 0;
+            font-size: 24px;
+            font-weight: 500;
+            text-align: center;
+        }
+    }
+}

@@ -1,0 +1,207 @@
+.footer {
+    padding: 166px 0 0 0;
+    background-image: url('../img/contact/contact_bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.footer_flex_container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact {
+    display: flex;
+    padding:  0 0 58px 0;
+    flex-direction: column;
+    align-items: center;
+
+    .contact_title {
+        margin: 0;
+        color: $footer-title-color;
+        position: relative;
+        font-size: 46px;
+        font-weight: 700;
+        line-height: 49px;
+        text-transform: uppercase;
+        letter-spacing: 5.52px;
+
+        &::before {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            top: -18px;
+            left: 110px;
+            position: absolute;
+            background-color: $footer-hyphen-color;
+        }
+    }
+}
+
+.footer_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 68px 0 0 0;
+    font-family: Asap;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.96px;
+    
+    .input_wrap_top {
+        display: flex;
+        
+        .name {
+            margin: 0 30px 0 0;
+            padding: 20px 10px 19px 10px;
+            width: 370px;
+            border: none;
+
+            &:hover {
+                box-shadow: 0 0 4px 4px $footer-hyphen-color;
+                transition: 0.2s;
+            }
+
+            &:focus {
+                outline: none;
+                box-shadow: 0 0 4px 4px $form-input-hover;
+            }
+            
+            &::placeholder {
+                color: $form-text-color;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 20px;
+                letter-spacing: 0.96px;
+            }
+        }
+        
+        .email {
+            @extend .name;
+            margin: 0 0 0 0;
+        }
+    }
+}
+
+.input_wrap_bottom {
+    display: flex;
+    margin: 29px 0 0 0;
+    flex-direction: column;
+    align-items: center;
+    
+    .message {
+        width: 768px;
+        height: 207px;
+        margin: 0 0 30px 0;
+        padding: 22px 10px 0 10px;
+        resize: none;
+        border: none;
+
+        &:hover {
+            box-shadow: 0 0 4px 4px $footer-hyphen-color;
+            transition: 0.2s;
+        }
+
+        &:focus {
+            outline: none;
+            box-shadow: 0 0 4px 4px $form-input-hover;
+        }
+
+        &::placeholder {
+            color: $form-text-color;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 20px;
+            letter-spacing: 0.96px;
+        }
+    }
+}
+
+.form_btn {
+    display: flex;
+    width: 123px;
+    padding: 20px 0 18px 0;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: $footer-btn-color;
+    cursor: pointer;
+
+    &:hover {
+        box-shadow: 0 0 4px 4px $footer-hyphen-color;
+        transition: 0.2s;
+    }
+
+    &:focus {
+        outline: none;
+        box-shadow: 0 0 4px 4px $form-input-hover;
+    }
+
+    .btn_text {
+        margin: 0 7px 0 0;
+        color: $form-text-color;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20px;
+        text-transform: uppercase;
+        letter-spacing: 0.96px;
+    }
+
+    .btn_send_icon {
+        display: block;
+    }
+}
+
+.footer_wrap {
+    display: flex;
+    width: 100%;
+    padding: 26px 0 30px 0;
+    position: relative;
+    justify-content: center;
+    border-top: 1px solid $footer-title-color;;
+    
+    .copyright {
+        margin: 0;
+        color: $footer-title-color;
+    }
+}
+
+.social_wrap {
+    display: flex;
+    position: absolute;
+    left: 0;
+    align-items: center;
+
+    .socia {
+        display: block;
+        width: 27px;
+        text-align: center;
+        text-decoration: none;
+        background-color: $footer-btn-color;
+
+        &:not(:last-child) {
+            margin: 0 9px 0 0;
+        }
+
+        &:hover {
+            background-color: $social-btn-hover;
+            transition: 0.2s;
+            
+            .social_icon {
+                color: $footer-title-color;
+            }
+        }
+
+        .social_icon {
+            color: $form-text-color;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 20px;
+            letter-spacing: 0.96px;
+        }
+    }
+}

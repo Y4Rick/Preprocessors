@@ -1,0 +1,97 @@
+.intro_block
+    display: flex
+    padding: 163px 0 187px 0
+    align-items: center
+
+.intro
+    display: flex
+    margin-right: auto
+    max-width: 580px
+    flex-direction: column
+
+    .intro_title
+        margin: 0
+        color: $sign-text-color
+        font-size: 55px
+        font-weight: 700
+        line-height: 65px
+        text-transform: uppercase
+
+    .intro_description
+        margin: 15px 0 0 0
+        color: $sign-text-color
+        font-size: 18px
+        font-weight: 400
+        line-height: 35px
+
+.intro_btns
+    display: flex
+    align-items: center
+    margin: 30px 0 0 0
+
+    .intro_btn
+        padding: 18px 38px
+        color: $sign-border-color
+        font-size: 15px
+        font-weight: 700
+        text-transform: uppercase
+        text-decoration: none
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15)
+        border-radius: 5px
+        background-color: $btn-color
+
+        &:not(:last-child)
+            margin: 0 30px 0 0
+
+        &:hover
+            color: $btn-color
+            background-color: $sign-border-color
+            box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3)
+            transition: 0.2s
+            
+.intro_video
+    margin-left: auto
+    width: 600px
+    height: 320px
+    position: relative
+    border: 1px solid $btn-color
+    border-radius: 5px
+
+    .video
+        width: 100%
+        height: 100%
+        border-radius: 5px
+        
+.video_interactive
+    display: flex
+    margin: auto
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    position: absolute
+    left: 0%
+    right: 0%
+    top: 0%
+    bottom: 0%
+
+    .video_button
+        display: flex
+        justify-content: center
+        align-items: center
+        padding: 23px 24px
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2)
+        border-radius: 5px
+        background-color: $btn-color
+        border: 1px solid transparent
+        cursor: pointer
+
+        &:hover
+            transform: scale(1.1)
+            transition: 0.2s
+
+    .button_description
+        margin: 14px 0 0 0
+        color: $btn-color
+        font-size: 12px
+        font-weight: 700
+        text-transform: uppercase

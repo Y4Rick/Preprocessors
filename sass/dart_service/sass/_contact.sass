@@ -1,0 +1,138 @@
+.contact_block
+    background-color: $contact-bg
+
+.contact
+    display: flex
+    padding: 42px 0 100px 0
+    flex-direction: column
+    align-items: center
+
+    .contact_title
+        margin: 0
+        color: $btn-color
+        font-size: 45px
+        font-weight: 500
+        line-height: 50px
+
+    .contact_description
+        width: 555px
+        margin: 19px 0 0 0
+        color: $btn-color
+        font-size: 15px
+        font-weight: 400
+        line-height: 25px
+        text-align: center
+
+.form
+    display: flex
+    width: 600px
+    margin: 40px 0 0 0
+    flex-direction: column
+    align-items: center
+    color: $btn-color
+    font-size: 14px
+    font-weight: 500
+    line-height: 30px
+
+    .input_wrap
+        display: flex
+        flex-wrap: wrap
+
+        %input_form_style
+            padding: 15px 10px 15px 20px
+            width: 280px
+            border-radius: 5px
+            background-color: $contact-bg
+            border: 1px solid $btn-color
+
+            &::placeholder
+                color: $btn-color
+                font-size: 14px
+                font-weight: 500
+                line-height: 30px
+
+        .first_name
+            @extend %input_form_style
+            margin: 0 auto 20px 0
+
+        .last_name
+            @extend %input_form_style
+            margin: 0 0 20px auto
+
+        .email
+            @extend %input_form_style
+            margin: 0 auto 20px 0
+
+        .tel
+            @extend %input_form_style   
+            margin: 0 0 20px auto
+
+        .message
+            @extend %input_form_style
+            width: 100%
+            height: 150px
+            margin: 0 0 20px 0
+            resize: none
+
+.buttom_wrap
+    display: flex
+    align-items: center
+    width: 100%
+
+    .form_ckeckbox_wrap
+        display: flex
+        margin-right: auto
+        align-items: center
+        position: relative
+
+        .form_input_checkbox
+            width: 14px
+            height: 16px
+            margin: 0 10px 0 0
+            position: relative
+            top: 2px
+            left: 2px
+            cursor: pointer
+            
+            &::after 
+                content: ''
+                display: block
+                width: 16px
+                height: 16px
+                position: absolute
+                top: -3px
+                left: -2px
+                background-color: $contact-bg
+                border: 1px solid $btn-color
+
+            &:checked::after
+                background-image: url('../img/form/ckeckbox.png')
+                background-repeat: no-repeat
+                background-position: center
+                background-size: 14px
+        
+
+        .form_ladel_checkbox
+            color: $btn-color
+            font-size: 15px
+            font-weight: 500
+            line-height: 20px
+            cursor: pointer
+
+    .form_btn
+        margin-left: auto
+        padding: 10px 43px
+        color: $sign-border-color
+        font-size: 16px
+        font-weight: 500
+        line-height: 30px
+        text-transform: uppercase
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15)
+        border-radius: 5px
+        background-color: $tools-btn
+        border: none
+        cursor: pointer
+
+        &:hover
+            background-color: $btn-color
+            transition: 0.2s

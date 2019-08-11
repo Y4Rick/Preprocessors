@@ -1,0 +1,90 @@
+.services_block {
+    background-color: @bg-add;
+}
+
+.services {
+    display: flex;
+    padding: 50px 0 0 0;
+    flex-direction: column;
+    align-items: center;
+    color: @btn-color;
+    
+    .services_title {
+        margin: 0;
+        font-size: 40px;
+        font-weight: 400;
+        line-height: 45px;
+        text-transform: uppercase;
+    }
+}
+
+.services_cards {
+    display: flex;
+    width: 100%;
+    margin: 53px 0 0 0;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: @bg-card;
+    
+    .card {
+        display: flex;
+        padding: 144px 20px 137px 20px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-grow: 1;
+
+        &::before {
+            content: '';
+            display: block;
+            width: 125px;
+            height: 74px;
+            background-image: url('../img/services/services_img.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+        }
+
+        &:hover {
+            background-color: @card-hover;
+            transition: 0.2s;
+        }
+
+        .card_title {
+            margin: 53px 0 0 0;
+            color: @btn-color;
+            font-size: 28px;
+            font-weight: 700;
+            line-height: 32px;
+            text-transform: uppercase;
+        }
+
+        .card_description {
+            margin: 14px 0 24px 0;
+            max-width: 300px;
+            text-align: center;
+            color: @btn-color;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+        }
+
+        .card_btn {
+            padding: 8px 16px;
+            color: @btn-color;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 22px;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 5px;
+            background-color: @card-btn;
+
+            &:hover {
+                background-color: lighten(@card-btn, 5);
+                transition: 0.2s;
+            }
+        }
+    }
+}

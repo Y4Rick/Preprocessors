@@ -1,0 +1,95 @@
+.tools_block
+    display: flex
+    padding: 96px 0 100px 0
+    flex-direction: column
+    align-items: center
+
+.tools
+    text-align: center
+
+    .tools_title
+        margin: 0
+        color: $btn-color
+        font-size: 45px
+        font-weight: 500
+        line-height: 50px
+
+.tools_description
+    margin: 10px 0 0 0
+    width: 555px
+
+    .description_title
+        margin: 0
+        color: $tools-title
+        font-size: 25px
+        font-weight: 400
+        line-height: 30px
+
+    .description_text
+        margin: 0
+        padding: 15px 0 0 0
+        color: $tools-title
+        font-size: 15px
+        font-weight: 400
+        line-height: 25px
+
+.tools_cards
+    display: flex
+    width: 100%
+    padding: 90px 0 76px 0
+    justify-content: space-between
+
+    .cars
+        width: 344px    
+        text-align: center
+
+        &::before
+            content: ''
+            display: block
+            width: 68px
+            height: 80px
+            margin: 0 auto
+            background-repeat: no-repeat
+            background-position: center
+            background-size: contain
+
+        &:nth-child(1)::before
+            background-image: url('../img/tools/tools_1.png')
+
+        &:nth-child(2)::before
+            background-image: url('../img/tools/tools_2.png')
+
+        &:nth-child(3)::before
+            background-image: url('../img/tools/tools_3.png')
+
+
+    .card_title
+        margin: 52px 0 0 0
+        color: $btn-color
+        font-size: 20px
+        font-weight: 500
+        line-height: 25px
+
+    .card_description
+        margin: 15px 0 0 0
+        font-size: 15px
+        font-weight: 400
+        line-height: 20px
+
+.tools_btn_block
+
+    .tools_btn
+        padding: 19px 25px
+        color: $sign-border-color
+        font-size: 15px
+        font-weight: 700
+        text-transform: uppercase
+        text-decoration: none
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15)
+        border-radius: 5px
+        background-color: $tools-btn
+        border: none
+
+        &:hover
+            background-color: $btn-color
+            transition: 0.2s

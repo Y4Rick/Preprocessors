@@ -1,0 +1,120 @@
+.testimonials_block {
+    background-color: $testimonials-bg-color;
+
+    .testimonials_wrap {
+        padding: 140px 0 122px 0;
+    }
+}
+
+.testimonials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    .testimonials_title {
+        margin: 0;
+        position: relative;
+        color: $services-title-color;
+        font-size: 46px;
+        font-weight: 700;
+        line-height: 49px;
+        text-transform: uppercase;
+        letter-spacing: 5.52px;
+        
+        &::before {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            top: -18px;
+            left: 150px;
+            position: absolute;
+            background-color: $title-hyphen-color;
+        }
+    }
+    
+    .testimonials_cards {
+        margin: 55px 0 0 0;  
+    }
+}
+
+.comment_wrap {
+    padding: 80px 75px 40px 121px;
+    border: 1px solid $testimonials-border-color;
+}
+
+.comment {
+    padding: 0 0 50px 190px;
+    position: relative;
+
+    &::before {
+        content: '';
+        display: block;
+        width: 159px;
+        height: 159px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-image: url('../img/users/user_img_1.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+
+    .comment_author {
+        margin: 0;
+        color: $testimonials-auther-color;
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 35px;
+        text-transform: uppercase;
+    }
+
+    .comment_author_position {
+        margin: 0;
+        color: $testimonials-auther-color;
+        font-size: 12px;
+        font-style: italic;
+        line-height: 14px;
+        text-transform: uppercase;
+    }
+
+    .comment_text {
+        margin: 13px 0 0 0;
+        width: 569px;
+        color: $testimonials-text-color;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        text-transform: uppercase;
+    }
+}
+
+.testimonials_btns {
+    display: flex;
+    justify-content: center;
+
+    .testimonials_btn {
+        margin: 0 2px;
+        width: 13px;
+        height: 13px;
+        border: 1px solid $testimonials-btn-border;
+        background: none;
+        cursor: pointer;
+
+        &:hover {
+            background-color: lighten($testimonials-btn-border, 50);
+            transition: 0.2s;
+
+        }
+
+        &:active {
+            background-color: $testimonials-btn-border;
+        }
+
+        &:focus {
+            outline: none;
+            background-color: $testimonials-btn-border;
+        }
+    }
+}

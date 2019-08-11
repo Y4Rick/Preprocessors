@@ -1,0 +1,68 @@
+.intro_block {
+    display: flex;
+    padding: 13px 0 0 0;
+    align-items: center;
+    flex-wrap: wrap;
+
+    &::after {
+        content: '';
+        display: block;
+        width: 570px;
+        height: 670px;
+        margin-left: auto;
+        background-image: url('../img/intro/intro_img.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: auto;
+    }
+}
+
+.intro {
+    margin-right: auto;
+
+    .intro_title {
+       margin: 0 0 0 -7px;
+       color: $intro-text-color;
+       font-size: 90px;
+       font-weight: 500;
+       line-height: 100px;
+    }
+
+    .intro_description {
+        margin: 0;
+        color: $intro-description-color;
+        font-size: 22px;
+        font-weight: 500;
+        line-height: 28px;
+    }
+}
+
+.intro_btn_links {
+    display: flex;
+    padding: 25px 0 0 0;
+
+    .link {
+        padding: 11px 0;
+        width: 160px;
+        display: block;
+        color: $intro-text-color;
+        font-size: 16px;
+        font-weight: 500;
+        text-align: center;
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 0.96px;
+        border: 1px solid $intro-text-color;
+        
+        &:first-child {
+            margin: 0 20px 0 0;
+        }
+
+        &:hover {
+            box-shadow: 0 18px 27px 2px $btn-hover-shadow;
+            border-color: $intro-btn-hover-color;
+            background-color: $intro-btn-hover-color;
+            transition: 0.2s;
+        }
+    }
+}

@@ -1,0 +1,89 @@
+.intro_block {
+    display: flex;
+    padding: 146px 0 188px 0;
+    justify-content: space-between;
+    align-items: center;
+
+    .slider_btn {
+        display: flex;
+        width: 35px;
+        height: 40px;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        background-color: transparent;
+        border: 2px solid fade(@primary-text-color, 30);
+
+        .slider_left_arrow {
+            height: 20px;
+            opacity: 0.7;
+        }
+
+        .slider_right_arrow {
+            .slider_left_arrow();
+        }
+
+        &:hover {
+            border: 2px solid fade(@primary-text-color, 100);
+            transition: 0.2s;
+
+            .slider_left_arrow {
+                opacity: 1;
+            }
+
+            .slider_right_arrow {
+                opacity: 1;
+            }
+        }
+    }        
+}
+
+.intro {
+    display: flex;
+    width: 538px;
+    padding: 46px 5px 52px 5px;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    border: 1px solid fade(@primary-text-color, 20);
+    background-color: fade(@primary-text-color, 5);
+
+    .intro_title {
+        margin: 0;
+        color: @primary-text-color;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 52px;
+        text-transform: uppercase;
+    }
+
+    .intro_description {
+        margin: 22px 0 0 0;
+        color: fade(@primary-text-color, 70);
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 18px;
+    }
+
+    .intro_btn {
+        display: block;
+        padding: 8px 24px 7px 23px;
+        position: absolute;
+        bottom: -18px;
+        color: @primary-text-color;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 18px;
+        text-transform: uppercase;
+        text-decoration: none;
+        border: 2px solid @primary-text-color;
+        background-color: fade(@primary-text-color, 25);
+
+        &:hover {
+            color: @secondary-text-color;
+            background-color: @primary-text-color;
+            transition: 0.2s;
+        }
+    }
+}

@@ -1,0 +1,102 @@
+.testimonials_block
+    background-image: linear-gradient(-53deg, rgba(0,0,0,0) 0%, rgba(0,184,212,0.71) 0%, rgba(29,233,182,0.94) 100%), url('../img/testimonial/testimonial_bg_img.png')
+    background-repeat: no-repeat
+    background-position: center
+    background-size: cover
+
+    .testimonials_wrap
+        display: flex
+        padding: 87px 0
+        align-items: center
+
+.testimonial
+    display: flex
+    flex-direction: column
+    width: 514px
+    margin-right: auto
+
+    .testimonial_title
+        margin: 0
+        color: $sign-border-color
+        font-size: 45px
+        font-weight: 500
+        line-height: 50px
+        
+    .testimonial_description
+        margin: 15px 0 0 0
+        color: $sign-border-color
+        font-size: 15px
+        font-weight: 400
+        line-height: 25px
+
+    .testimonial_button
+        margin: 75px 0 0 0
+        padding: 18px 25px
+        align-self: flex-start
+        color: $sign-border-color
+        font-size: 15px
+        font-weight: 700
+        text-transform: uppercase
+        text-decoration: none
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15)
+        border-radius: 5px
+        background-color: $btn-color
+
+        &:hover
+            color: $btn-color
+            background-color: $sign-border-color
+            box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3)
+            transition: 0.2s
+
+.comments
+    display: flex
+    flex-direction: column
+    margin-left: auto
+    width: 700px
+
+.comment
+    display: flex
+    align-items: center
+
+    &::before
+        content: ''
+        width: 60px
+        height: 60px
+        margin: 0 auto 0 0
+        border-radius: 50%
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15)
+        background-repeat: no-repeat
+        background-position: center
+        background-size: contain
+
+    &:not(:last-child)
+        margin: 0 0 70px 0        
+
+    &:nth-child(1)::before
+        background-image: url('../img/users/user_1.png')
+
+    &:nth-child(2)::before
+        background-image: url('../img/users/user_2.png')
+
+.comment_wrap
+    width: 600px
+    margin: 0 0 0 auto
+    padding: 28px 64px 26px 30px
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15)
+    border-radius: 5px
+    background-color: #ffffff
+
+    .comment_author
+        margin: 0
+        color: $btn-color
+        font-size: 18px
+        font-weight: 700
+        line-height: 25px
+
+    .comment_text
+        margin: 16px 0 0 0
+        padding: 0
+        font-size: 15px
+        font-weight: 400
+        font-style: italic
+        line-height: 25px
